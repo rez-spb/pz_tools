@@ -14,4 +14,4 @@ Please refer to `docs/history.txt` file in a corresponding directory for a chang
 
 ## License
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)  
-Beware that some parts can have different licenses in the future.
+Beware that some parts may have different licenses in the future.
