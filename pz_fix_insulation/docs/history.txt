@@ -1,3 +1,6 @@
+===[v0.0.2]====================================================[2019-10-17]===
++ add temperature parameter fixed to 15
+
 ===[v0.0.1]====================================================[2019-10-17]===
 + fix_insulation.py first public version
 + README.md initial version

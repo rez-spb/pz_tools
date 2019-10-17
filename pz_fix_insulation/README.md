@@ -9,8 +9,9 @@ Pretty simple thing.
 Developers forgot to add proper insulation to all clothing items, 
 so characters are prone to freezing to death in any vanilla clothes 
 as the game thinks that no parameter equals zero.  
-This script adds `'Insulation = 1.0'` to every clothing item it finds 
-in files under `'$PZ_INSTALL_DIR'/media/scripts/clothing/` directory.
+This script adds `'Insulation = 1.0'` and `'Temperature = 15'` to 
+every clothing item it finds in files under 
+`'$PZ_INSTALL_DIR'/media/scripts/clothing/` directory.
 
 ## Usability notes
 * Use double quoted in `--directory` argument for paths with spaces;
@@ -30,5 +31,5 @@ optional arguments:
   -v, --verbose         verbose output
   -q, --quiet           display warnings and errors only
 
-v0.0.1 (2019-10-17) by rez_spb
+v0.0.2 (2019-10-17) by rez_spb
 ```

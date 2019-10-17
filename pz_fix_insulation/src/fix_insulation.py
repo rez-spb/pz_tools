@@ -3,7 +3,7 @@ Set insulation for those items that lack the property to 1.0.
 Used for build 41.12 as no insulation is implemented yet.
 """
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __author__ = 'rez_spb'
 __date__ = '2019-10-17'
 
@@ -119,12 +119,14 @@ with os.scandir(os.path.join(args.directory, clothing_path)) as cd:
             module = file2obj(full_path)
             for m in module.values():
                 for i, items in m.items():
-                    if 'Insulation' in items.keys():
+                    if 'Insulation' in items.keys()\
+                            and 'Temperature' in items.keys():
                         log.debug('{} has insulation'.format(i))
                     else:
                         needs_fix = True
                         # no insulation, adding 1.0
                         module['Base'][i]['Insulation'] = '1.0'
+                        module['Base'][i]['Temperature'] = '15'
             if needs_fix is True:
                 obj2file(module, full_path)
             else:
